@@ -1,0 +1,33 @@
+.btn-outline-secondary{
+    font-family: 'Megrim', cursive;
+    color: #696969;
+    font-size: 35px;
+    line-height: 40px;
+
+}
+
+.btn-outline-secondary:hover {
+    background: transparent;
+    animation: buzz .7s linear infinite;
+    -moz-animation: buzz .7s linear infinite;
+    -webkit-animation: buzz .3s linear infinite;
+    -o-animation: buzz .2s linear infinite;
+  }
+
+#aboutButton{
+    position: fixed;
+    margin-left: 34.25%;
+    margin-top: 5%;
+}
+
+#projectButton{
+    position: fixed;
+    margin-left: 42.50%;
+    margin-top: 5%;
+}
+
+#contactButton{
+    position: fixed;
+    margin-left: 53.80%;
+    margin-top: 5%;
+}

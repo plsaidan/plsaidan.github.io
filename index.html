@@ -5,10 +5,177 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Aidan Chase Vandiver</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Megrim" rel="stylesheet">
     <link rel="stylesheet" href="./css/main.css">
 </head>
 <body>
+<!--Background-->
+<!--Credit and Thanks to CodePen user Aaron Rickle for background animation source-->
+<!--Original Pen https://codepen.io/arickle/pen/XKjMZY -->
+<body class="back-row-toggle splat-toggle">
+  <div class="rain front-row"></div>
+  <div class="rain back-row"></div>
+<!--Header-->
+<section id="header">
+
+  <div class="first">
+    <div class="Aidan">Aidan</div>
+  </div>
+  
+  <div class="last">
+    <div class="Vandiver">Vandiver</div>
+  </div>
+
+</section>
+<!--Modal Nav-->
+
+<!-- About Modal -->
+<button type="button" class="btn btn-outline-secondary" id="aboutButton" data-toggle="modal" data-target="#aboutModal">
+    About
+  </button>
+  
+<div class="modal fade" id="aboutModal" tabindex="-1" role="dialog" aria-labelledby="aboutModal" aria-hidden="false">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="aboutModal">About Me</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Qui perspiciatis consectetur aliquid ratione! Accusantium, neque mollitia aut sequi at consequuntur architecto natus provident maxime eligendi cum eum? Autem, sed maiores?
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Projects Modal -->
+  <button type="button" class="btn btn-outline-secondary" id="projectButton" data-toggle="modal" data-target="#projectModal">
+      Projects
+    </button>
     
-    <script arc="./js/main.js"></script>
+  <div class="modal fade" id="projectModal" tabindex="-1" role="dialog" aria-labelledby="projectModal" aria-hidden="false">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="projectModal">Projects</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <ul>
+              <li>CSS Creature</li>
+              <li>HTML and CSS Static Storefront</li>
+              <li>C# Console App Challanges</li>
+              <li>FootStance</li>
+            </ul>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Contact Modal -->
+  <button type="button" class="btn btn-outline-secondary" id="contactButton" data-toggle="modal" data-target="#contactModal">
+      Contact
+    </button>
+    
+  <div class="modal fade" id="contactModal" tabindex="-1" role="dialog" aria-labelledby="contactModal" aria-hidden="false">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="contactModal">Contact Me</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+              <div class="container">
+                  <div class="row">
+                    <form action="https://formspree.io/aidanvandiver@gmail.com" method="POST">
+                      <div class="control-group">
+                        <div class="form-group">
+                          <label>Name</label>
+                          <input
+                            type="text"
+                            class="form-control"
+                            placeholder="Your Name"
+                            id="name"
+                            required
+                            data-validation-required-message="Please enter your name"
+                            name="name"
+                            >
+                          <p class="help-block text-danger"></p>
+                        </div>
+                      </div>
+                      <div class="control-group">
+                        <div class="form-group">
+                          <label>Email Address</label>
+                          <input
+                            type="email"
+                            class="form-control"
+                            placeholder="Your Email"
+                            id="email"
+                            required
+                            data-validation-required-message="Please enter your email"
+                            name="_replyto"
+                          >
+                          <p class="help-block text-danger"></p>
+                        </div>
+                      </div>
+                      <div class="control-group">
+                        <div class="form-group">
+                          <textarea
+                            class="form-control"
+                            rows="7"
+                            placeholder="Your Message"
+                            id="message"
+                            required
+                            data-validation-required-message="Please leave a message"
+                            name="message"
+                          ></textarea>
+                          <p class="help-block text-danger"></p>
+                        </div>
+                      </div>
+                      <div class="text-center">
+                        <div id="success"></div>
+                        <button type="submit" class="btn btn-lg btn-black">
+                          <i class="fa fa-paper-plane-o" aria-hidden="true"></i>
+                          Send Message
+                        </button>
+                      </div>
+                    </form>
+                  </div>
+                </div>          
+              </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+<!--Footer-->
+<footer></footer>
+
+
+
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  <script src="./js/main.js"></script>
 </body>
 </html>
