@@ -10,24 +10,59 @@
     background: transparent;
     animation: buzz .7s linear infinite;
     -moz-animation: buzz .7s linear infinite;
-    -webkit-animation: buzz .3s linear infinite;
+    -webkit-animation: buzz 9s linear infinite;
     -o-animation: buzz .2s linear infinite;
   }
 
+.btn:focus,.btn:active {
+    outline: none !important;
+    box-shadow: none;
+ }
+
 #aboutButton{
-    position: fixed;
-    margin-left: 34.25%;
+    position: relative;
+    margin-left: 33%;
     margin-top: 5%;
 }
 
 #projectButton{
-    position: fixed;
-    margin-left: 42.50%;
+    position: relative;
+    margin-left: 2%;
     margin-top: 5%;
 }
 
 #contactButton{
-    position: fixed;
-    margin-left: 53.80%;
+    position: relative;
+    margin-left: 2%;
     margin-top: 5%;
+}
+
+
+.modal-header{
+    background: #303030;
+    font-family: 'Megrim', cursive;
+
+}
+
+.modal-title{
+    animation: buzz .7s linear infinite;
+    -moz-animation: buzz .7s linear infinite;
+    -webkit-animation: buzz 9s linear infinite;
+    -o-animation: buzz .2s linear infinite;
+}
+
+.modal-body{
+    background: #303030;
+    font-family: 'Raleway', sans-serif;
+    color: #C8C8C8
+}
+
+.modal-footer{
+    background: #303030;
+}
+
+#closeBtn{
+    font-size: 20px;
+    line-height: 30px;
+    
 }

@@ -37,7 +37,7 @@
   .Vandiver {
     animation: buzz .7s linear infinite;
     -moz-animation: buzz .7s linear infinite;
-    -webkit-animation: buzz .5s linear infinite;
+    -webkit-animation: buzz 6s linear infinite;
     -o-animation: buzz .2s linear infinite;
   }
   

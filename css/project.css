@@ -1,0 +1,25 @@
+.carousel-caption{
+    color: #fff;
+    font-family: 'Raleway', sans-serif;
+    background: rgba(0, 0, 0, 0.75);
+    font-size: 75%;
+    
+    display: inline;
+    padding: 0.5rem;
+  
+    -webkit-box-decoration-break: clone;
+    box-decoration-break: clone;
+}
+
+.carousel-caption-cons{
+    color: black;
+    font-family: 'Raleway', sans-serif;
+    background: rgba(255, 255, 255, 0.75);
+    font-size: 75%;
+    
+    display: inline;
+    padding: 0.5rem;
+  
+    -webkit-box-decoration-break: clone;
+    box-decoration-break: clone;
+}
