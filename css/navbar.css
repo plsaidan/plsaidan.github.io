@@ -45,6 +45,7 @@
 }
 
 .modal-title{
+    font-family: 'Megrim', cursive;
     animation: buzz .7s linear infinite;
     -moz-animation: buzz .7s linear infinite;
     -webkit-animation: buzz 9s linear infinite;
@@ -55,6 +56,12 @@
     background: #303030;
     font-family: 'Raleway', sans-serif;
     color: #C8C8C8
+}
+
+.modal-body img{
+    position: center;
+    height: 50%;
+    width: 50%;
 }
 
 .modal-footer{
